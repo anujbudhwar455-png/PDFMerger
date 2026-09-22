@@ -5,37 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — PDF Merger | Desrein Studios</title>
   <meta name="description" content="Privacy Policy for PDF Merger by Desrein Studios. On-device PDF processing, AdMob, and Google Play Billing disclosure." />
-  <style>
-    :root { color-scheme: light dark; --bg:#0f1419; --card:#1a2332; --text:#e8eef7; --muted:#9aa8bc; --accent:#4f8cff; --border:#2a3648; }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#f6f8fb; --card:#fff; --text:#1a2332; --muted:#5a6a7e; --accent:#2563eb; --border:#e2e8f0; }
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    header, main, footer { max-width:720px; margin:0 auto; padding:1.25rem 1.25rem; }
-    header { padding-top:2rem; }
-    h1 { font-size:1.75rem; margin:0 0 .35rem; }
-    h2 { font-size:1.15rem; margin:1.75rem 0 .5rem; }
-    .muted { color:var(--muted); font-size:.95rem; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.35rem; }
-    a { color:var(--accent); }
-    ul { padding-left:1.2rem; }
-    nav a { margin-right:1rem; }
-    footer { color:var(--muted); font-size:.9rem; padding-bottom:2.5rem; }
-  </style>
+  <meta name="theme-color" content="#070b14" />
+  <link rel="icon" type="image/png" href="assets/icon-512.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy-policy.html">Privacy</a>
-      <a href="terms-and-conditions.html">Terms</a>
-    </nav>
-    <h1>Privacy Policy</h1>
-    <p class="muted">PDF Merger (Android) · Desrein Studios · Last updated: September 15, 2026</p>
-  </header>
-  <main>
-    <div class="card">
+<body class="legal">
+  <nav class="site-nav" aria-label="Primary">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-512.png" width="36" height="36" alt="" />
+        PDF Merger
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="privacy-policy.html" class="active">Privacy</a></li>
+        <li><a href="terms-and-conditions.html">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="legal-wrap">
+    <article class="legal-card glass">
+      <nav class="legal-nav" aria-label="Legal">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html" class="active">Privacy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+      </nav>
+      <h1>Privacy Policy</h1>
+      <p class="muted">PDF Merger (Android) · Desrein Studios · Last updated: September 15, 2026</p>
+
       <p>
         This Privacy Policy describes how <strong>Desrein Studios</strong> (“we”, “us”) handles information in the
         <strong>PDF Merger</strong> mobile application (package
@@ -132,10 +135,13 @@
         Desrein Studios / Anuj Budhwar<br />
         Email: <a href="mailto:anujbudhwar455@gmail.com">anujbudhwar455@gmail.com</a>
       </p>
-    </div>
-  </main>
-  <footer>
-    <p>© 2026 Desrein Studios. <a href="terms-and-conditions.html">Terms &amp; Conditions</a></p>
+    </article>
+  </div>
+
+  <footer class="legal-footer">
+    <p>© 2026 Desrein Studios. <a href="terms-and-conditions.html">Terms &amp; Conditions</a> · <a href="index.html">Home</a></p>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>

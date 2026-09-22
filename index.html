@@ -3,48 +3,179 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PDF Merger — Desrein Studios</title>
-  <meta name="description" content="Official website for PDF Merger by Desrein Studios — legal documents and app information." />
-  <style>
-    :root { color-scheme: light dark; --bg:#0f1419; --card:#1a2332; --text:#e8eef7; --muted:#9aa8bc; --accent:#4f8cff; --border:#2a3648; }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#f6f8fb; --card:#fff; --text:#1a2332; --muted:#5a6a7e; --accent:#2563eb; --border:#e2e8f0; }
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    main { max-width:720px; margin:0 auto; padding:2.5rem 1.25rem; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1.75rem 1.5rem; }
-    h1 { margin-top:0; font-size:1.85rem; }
-    .muted { color:var(--muted); }
-    .links a { display:inline-block; margin:0.5rem 1rem 0.5rem 0; color:var(--accent); font-weight:600; }
-    code { font-size:.9em; }
-    footer { max-width:720px; margin:0 auto; padding:0 1.25rem 2.5rem; color:var(--muted); font-size:.9rem; }
-  </style>
+  <title>PDF Merger — Merge &amp; Split PDFs On-Device | Desrein Studios</title>
+  <meta name="description" content="PDF Merger by Desrein Studios: merge and split PDF files on your Android device. On-device privacy, optional Premium via Google Play Billing, AdMob free tier." />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="icon" type="image/png" href="assets/icon-512.png" />
+  <link rel="apple-touch-icon" href="assets/icon-512.png" />
+  <meta property="og:title" content="PDF Merger — Desrein Studios" />
+  <meta property="og:description" content="Merge and split PDFs on-device. Private by design. Coming to Google Play." />
+  <meta property="og:image" content="assets/feature-graphic-1024x500.png" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <div class="card">
-      <h1>PDF Merger</h1>
-      <p class="muted">by Desrein Studios · Android · <code>com.aistudio.pdfmerger.ajxbv</code></p>
-      <p>
-        Official website for legal documents and app information for
-        <strong>PDF Merger</strong> — merge and split PDF files on your Android device.
-        Document contents are processed locally. The free tier may show ads via Google AdMob;
-        optional Premium unlocks via Google Play Billing.
-      </p>
-      <p class="links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-      </p>
-      <p class="muted">
-        Contact:
-        <a href="mailto:anujbudhwar455@gmail.com" style="color:inherit">anujbudhwar455@gmail.com</a>
-      </p>
-      <p class="muted">Desrein Studios</p>
+  <div id="webgl-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="inner">
+        <a class="brand" href="index.html">
+          <img src="assets/icon-512.png" width="36" height="36" alt="" />
+          PDF Merger
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
+          <li><a href="terms-and-conditions.html">Terms</a></li>
+          <li><a class="nav-cta" href="#get-app">Coming to Play</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="inner">
+        <div class="hero-panel glass">
+          <div class="eyebrow">Desrein Studios · Android</div>
+          <h1>Merge &amp; split PDFs <span>on your device</span></h1>
+          <p class="tagline">
+            PDF Merger keeps your documents local. Combine files, extract pages, and ship polished PDFs —
+            without uploading your content to our servers.
+          </p>
+          <ul class="feature-bullets">
+            <li><span class="bullet-dot" aria-hidden="true"></span> Merge multiple PDFs</li>
+            <li><span class="bullet-dot" aria-hidden="true"></span> Split by pages</li>
+            <li><span class="bullet-dot" aria-hidden="true"></span> On-device privacy</li>
+            <li><span class="bullet-dot" aria-hidden="true"></span> Optional Premium</li>
+          </ul>
+          <div class="cta-row" id="get-app">
+            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.aistudio.pdfmerger.ajxbv" rel="noopener noreferrer">
+              Join closed testing
+            </a>
+            <a class="btn btn-ghost" href="#features">See features</a>
+            <p class="cta-note">Closed testing opt-in · Production listing coming to Google Play · Package <code>com.aistudio.pdfmerger.ajxbv</code></p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="feature-shot">
+            <img src="assets/feature-graphic-1024x500.png" width="1024" height="500" alt="PDF Merger feature graphic — merge and split PDFs" />
+          </div>
+          <div class="float-badge glass">
+            <strong>Private by design</strong>
+            Documents processed locally
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="features" aria-labelledby="features-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="features-title">Built for everyday PDF work</h2>
+          <p>A focused Android utility — merge stacks, split ranges, keep history on-device, and upgrade when you want an ad-light workflow.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⧉</div>
+            <h3>Merge PDFs</h3>
+            <p>Combine multiple documents into one clean file. Ideal for reports, packets, and sharing a single attachment.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✂</div>
+            <h3>Split PDFs</h3>
+            <p>Extract the pages you need. Break large files into smaller documents without leaving your phone.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🛡</div>
+            <h3>On-device privacy</h3>
+            <p>PDF contents stay on your device for merge and split. We do not upload your documents to Desrein Studios servers.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Offline-first workflow</h3>
+            <p>Core PDF tools work where you are. Network access is used for ads (free tier) and Play Billing when you purchase Premium.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <h3>Optional Premium</h3>
+            <p>Unlock Premium via Google Play Billing (<code>premium_upgrade</code>, ~$4.99) for an ad-suppressed experience.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◎</div>
+            <h3>Free tier with ads</h3>
+            <p>The free tier may show Google AdMob ads. Your PDF contents are not used for advertising uploads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" aria-labelledby="shots-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2 id="shots-title">A look inside</h2>
+          <p>Clean, dark productivity UI designed for fast merge and split sessions on Android.</p>
+        </div>
+        <div class="shots-grid">
+          <figure class="shot wide">
+            <img src="assets/feature-graphic-1024x500.png" width="1024" height="500" alt="PDF Merger banner graphic" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="assets/screenshot-1.png" width="1080" height="1920" alt="PDF Merger app screenshot 1" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="assets/screenshot-2.png" width="1080" height="1920" alt="PDF Merger app screenshot 2" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="premium">
+      <div class="section-inner">
+        <div class="premium-card glass">
+          <div>
+            <h2>Premium when you want it</h2>
+            <p>
+              Stay on the free AdMob-supported tier, or unlock Premium through Google Play Billing.
+              Purchases and refunds are handled by Google Play.
+            </p>
+          </div>
+          <div class="price-pill">Premium <em>premium_upgrade</em> · ~$4.99</div>
+        </div>
+      </div>
     </div>
-  </main>
-  <footer>
-    <p>© 2026 Desrein Studios · Last updated: September 15, 2026</p>
-  </footer>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/icon-512.png" width="40" height="40" alt="" />
+          <div>
+            <strong>Desrein Studios</strong>
+            <span>PDF Merger · Android utility</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#features">Features</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          <a href="mailto:anujbudhwar455@gmail.com">anujbudhwar455@gmail.com</a>
+        </div>
+        <div class="footer-meta">
+          <span>© 2026 Desrein Studios</span>
+          <span>Package <code>com.aistudio.pdfmerger.ajxbv</code></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="three-scene.js" defer></script>
+  <script src="main.js" defer></script>
 </body>
 </html>

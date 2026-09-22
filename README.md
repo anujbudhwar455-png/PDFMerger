@@ -1,55 +1,41 @@
-# PDF Merger — GitHub Pages (legal site)
+# PDF Merger — Official site (GitHub Pages)
 
-Static site for Play Console privacy / terms URLs and app info.
+Marketing + legal site for **PDF Merger** by Desrein Studios.
 
-## Public URLs (after publish)
+## Live URLs
 
 - https://anujbudhwar455-png.github.io/PDFMerger/
 - https://anujbudhwar455-png.github.io/PDFMerger/privacy-policy.html
 - https://anujbudhwar455-png.github.io/PDFMerger/terms-and-conditions.html
 
+## Stack
+
+- Static HTML / CSS / JS (no build step)
+- Three.js `0.160.0` from jsDelivr CDN for the 3D floating-document hero
+- Inter font from Google Fonts
+
 ## Files
 
-| File | Purpose |
+| Path | Purpose |
 |------|---------|
-| `index.html` | Home — app blurb, links to legal pages, contact |
-| `privacy-policy.html` | Full privacy policy (on-device PDFs, AdMob, Play Billing) |
+| `index.html` | 3D product landing page |
+| `styles.css` | Shared dark studio theme + glass UI |
+| `three-scene.js` | Three.js PDF-card scene (parallax, reduced-motion) |
+| `main.js` | Nav + light reveals |
+| `privacy-policy.html` | Privacy policy (Play Console URL) |
 | `terms-and-conditions.html` | Terms & conditions |
+| `assets/` | Icon, feature graphic, screenshots |
 
-Effective / last updated: **September 15, 2026**.
+## Deploy
 
-## Publish to `anujbudhwar455-png/PDFMerger`
+Pages source: **branch `main` · folder `/ (root)`**.
 
-1. Create a public GitHub repo named **`PDFMerger`** under the account **`anujbudhwar455-png`** (if it does not exist yet).
-2. Push the contents of this folder (`github-pages/`) to the **`main`** branch **root** (not a `/docs` subfolder):
-   - `index.html`
-   - `privacy-policy.html`
-   - `terms-and-conditions.html`
-   - (optional) this `README.md`
-3. In the repo: **Settings → Pages**
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-4. Save and wait a minute or two for GitHub Pages to build.
-5. Verify the three URLs above load correctly.
-6. In Google Play Console, set Privacy Policy URL to:
-   `https://anujbudhwar455-png.github.io/PDFMerger/privacy-policy.html`
-
-### Example git commands (from this folder)
-
-```bash
-cd /path/to/github-pages
-git init
-git add index.html privacy-policy.html terms-and-conditions.html README.md
-git commit -m "Add PDF Merger GitHub Pages legal site"
-git branch -M main
-git remote add origin https://github.com/anujbudhwar455-png/PDFMerger.git
-git push -u origin main
-```
-
-Then enable Pages as described above.
+Push to `main` on `anujbudhwar455-png/PDFMerger`. Wait for the Pages build, then verify the URLs above.
 
 ## Notes
 
-- Do **not** claim “no ads / no SDKs” — the app uses AdMob and Google Play Billing.
 - Contact: anujbudhwar455@gmail.com · Desrein Studios
+- Package: `com.aistudio.pdfmerger.ajxbv`
+- Free tier uses AdMob; optional Premium via Play Billing (`premium_upgrade`)
+- Closed testing: https://play.google.com/apps/testing/com.aistudio.pdfmerger.ajxbv
+- Legal last updated: **September 15, 2026**
